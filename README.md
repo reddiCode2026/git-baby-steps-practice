@@ -1,17 +1,6 @@
 # Python Calculator
 
-A small Python calculator project that provides addition, subtraction, and multiplication functions.
-
-## Multiplication
-
-The `multiply(first_number, second_number)` function returns the product of two numbers:
-
-```python
-from calculator import multiply
-
-result = multiply(10, 5)
-print(result)  # 50
-```
+A small Python calculator project that provides addition and subtraction functions.
 
 ## Run
 
