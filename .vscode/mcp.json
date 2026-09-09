@@ -1,0 +1,25 @@
+{
+    "servers": {
+        "echo-windows": {
+            "command": "powershell",
+            "args": [
+                "-ExecutionPolicy",
+                "Bypass",
+                "-File",
+                "./.vscode/mcp-echo.ps1"
+            ]
+        },
+        "epam-jira": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "ff-mcp-jira"
+            ],
+            "env": {
+                "JIRA_BASE_URL": "${env:JIRA_SITE_URL}",
+                "JIRA_API_TOKEN": "${env:JIRA_API_TOKEN}",
+                "JIRA_AUTH_MODE": "bearer"
+            }
+        }
+    }
+}

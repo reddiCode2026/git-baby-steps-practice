@@ -3,5 +3,6 @@
   "chat.mcp.access": "all",
   "chat.agent.maxRequests": 250,
   "files.autoSave": "afterDelay",
-  "files.autoSaveDelay": 100
+  "files.autoSaveDelay": 100,
+  "python.defaultInterpreterPath": "C:\\Users\\Reddi_Prasad_Kuppala\\AppData\\Local\\Programs\\Python\\Python313\\python.exe"
 }
