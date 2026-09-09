@@ -6,3 +6,4 @@
 - [`./instructions/authenticate-jira-cloud.agent.md`](./authenticate-jira-cloud.agent.md) — Configure Jira Cloud REST access with email and API token before any API requests.
 - [`./instructions/run-status-report-cli.agent.md`](./run-status-report-cli.agent.md) — Connect config loading, Jira queries, normalization, metrics, rendering, and dated file output through the CLI entry point.
 - [`./instructions/python-best-practices.agent.md`](./python-best-practices.agent.md) — Apply Python coding standards for readable, maintainable, and safe code.
+- [`./instructions/calculate-compound-interest.agent.md`](./calculate-compound-interest.agent.md) — Calculate compound interest through the command-line tool.
