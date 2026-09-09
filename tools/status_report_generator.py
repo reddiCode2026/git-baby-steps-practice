@@ -32,7 +32,7 @@ def parse_arguments() -> argparse.Namespace:
 def main() -> int:
     """Generate and save a report for the requested Jira project."""
     arguments = parse_arguments()
-    load_dotenv(PROJECT_DIR / ".env")
+    load_dotenv(PROJECT_DIR / ".env", override=True)
     os.environ["JIRA_PROJECT_KEY"] = arguments.project_key.strip().upper()
 
     try:
