@@ -6,7 +6,7 @@ description: Generate concise weekly status reports in Markdown.
 Generate a weekly status report using these rules:
 
 - Format: Markdown.
-- Include these sections in order: Accomplishments, Blockers, Next Week.
+- Include these sections in order: Accomplishments, Risks, Blockers, Next Week.
 - Use bullet points only; do not write paragraphs.
 - Keep the complete report to a maximum of 20 lines.
 - Use a professional tone.
