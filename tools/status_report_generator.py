@@ -29,14 +29,19 @@ def parse_arguments() -> argparse.Namespace:
     return parser.parse_args()
 
 
+def load_config(project_key: str) -> Config:
+    """Load Jira credentials from .env and apply the requested project key."""
+    load_dotenv(PROJECT_DIR / ".env", override=True)
+    os.environ["JIRA_PROJECT_KEY"] = project_key.strip().upper()
+    return Config.from_environment()
+
+
 def main() -> int:
     """Generate and save a report for the requested Jira project."""
     arguments = parse_arguments()
-    load_dotenv(PROJECT_DIR / ".env", override=True)
-    os.environ["JIRA_PROJECT_KEY"] = arguments.project_key.strip().upper()
 
     try:
-        config = Config.from_environment()
+        config = load_config(arguments.project_key)
         output = generate_report(JiraClient(config), config)
     except (ConfigurationError, JiraApiError, requests.RequestException) as error:
         print(f"Error: {error}")
